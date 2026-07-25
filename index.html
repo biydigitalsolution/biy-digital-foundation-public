@@ -10,135 +10,341 @@
 
     <meta
         name="description"
-        content="Build Your Digital Foundation with BIY Digital Solution."
+        content="BIY Digital Solution helps businesses modernize operations with Microsoft 365, automation, reporting, AI, and cloud solutions."
     >
 
-    <title>Build Your Digital Foundation</title>
+    <title>BIY Digital Solution</title>
+
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <a href="#home" class="header-logo" aria-label="BIY Digital Solution home">
+            <img
+                src="assets/logo.png"
+                alt="BIY Digital Solution"
+            >
+        </a>
+
+        <nav class="desktop-navigation" aria-label="Main navigation">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#about">About Us</a>
+            <a href="#why-biy">Why BIY</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a
+            class="header-booking-button"
+            href="https://bookings.cloud.microsoft/book/BIYDigitalSolution@biydigitalsolutions.onmicrosoft.com/s/ORhv6GnR3Eu_W5o"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Book a Consultation
+        </a>
+
+        <button
+            class="mobile-menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
     <main>
-        <section class="hero">
-            <div class="wave wave-left"></div>
-            <div class="wave wave-right"></div>
 
-            <div class="hero-card">
-                <img
-                    src="assets/logo.png"
-                    alt="BIY Digital Solution logo"
-                    class="logo"
-                >
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-background-glow" aria-hidden="true"></div>
 
-                <p class="brand">BIY Digital Solution</p>
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">BIY Digital Solution</p>
 
-                <h1>
-                    Build Your Digital
-                    <span>Foundation</span>
-                </h1>
+                    <h1>
+                        Automation.<br>
+                        Integration.<br>
+                        <span>Real Results.</span>
+                    </h1>
 
-                <p class="description">
-                    Tell us about your business and what you would like to improve.
-                    We help businesses modernize with Microsoft 365, automation,
-                    reporting, and AI solutions.
+                    <p class="hero-description">
+                        We help businesses modernize operations, connect systems,
+                        and automate processes so you can focus on growth.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <!-- Main booking option -->
+                        <a
+                            class="primary-button booking-button"
+                            href="https://bookings.cloud.microsoft/book/BIYDigitalSolution@biydigitalsolutions.onmicrosoft.com/s/ORhv6GnR3Eu_W5o"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="button-icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 48">
+                                    <rect x="7" y="10" width="34" height="31" rx="4"></rect>
+                                    <path d="M15 5v10M33 5v10M7 20h34"></path>
+                                    <path d="M15 27h4M23 27h4M31 27h4"></path>
+                                    <path d="M15 34h4M23 34h4"></path>
+                                </svg>
+                            </span>
+
+                            <span class="button-text">
+                                <strong>Book Your Free Consultation</strong>
+                                <small>30-minute discovery call</small>
+                            </span>
+                        </a>
+
+                        <!-- Secondary request option -->
+                        <a
+                            class="secondary-button request-button"
+                            href="https://forms.cloud.microsoft/r/uP17vPvWPe"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span class="button-icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 48">
+                                    <path d="M12 5h17l8 8v30H12z"></path>
+                                    <path d="M29 5v9h8"></path>
+                                    <path d="M18 23h13M18 30h13M18 37h8"></path>
+                                </svg>
+                            </span>
+
+                            <span class="button-text">
+                                <strong>Start Your Request</strong>
+                                <small>Tell us about your business</small>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="trust-points">
+                        <div class="trust-item">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M24 4l15 6v11c0 10-6 18-15 23C15 39 9 31 9 21V10z"></path>
+                                <path d="M17 24l5 5 10-11"></path>
+                            </svg>
+                            <span>Secure &amp; Compliant</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <circle cx="24" cy="24" r="18"></circle>
+                                <path d="M15 24l6 6 12-13"></path>
+                            </svg>
+                            <span>Microsoft-Focused Solutions</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <circle cx="24" cy="24" r="18"></circle>
+                                <path d="M24 13v12l8 5"></path>
+                            </svg>
+                            <span>Fast Turnaround</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud visual -->
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="cloud-glow"></div>
+
+                    <div class="digital-cloud">
+                        <div class="cloud-circle cloud-circle-one"></div>
+                        <div class="cloud-circle cloud-circle-two"></div>
+                        <div class="cloud-circle cloud-circle-three"></div>
+                        <div class="cloud-circle cloud-circle-four"></div>
+                        <div class="cloud-base"></div>
+
+                        <div class="platform-icons">
+                            <div class="platform-icon power-apps">
+                                <span>◆</span>
+                            </div>
+
+                            <div class="platform-icon azure">
+                                <span>A</span>
+                            </div>
+
+                            <div class="platform-icon sharepoint">
+                                <span>S</span>
+                            </div>
+
+                            <div class="platform-icon power-bi">
+                                <span>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </span>
+                            </div>
+
+                            <div class="platform-icon power-automate">
+                                <span>▰</span>
+                            </div>
+                        </div>
+
+                        <div class="cloud-beam"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services" id="services">
+            <div class="services-introduction">
+                <p class="section-label">How We Help</p>
+
+                <h2>
+                    Digital Solutions That<br>
+                    Drive Your Business Forward
+                </h2>
+
+                <p>
+                    From automation to analytics, we build smart, scalable
+                    solutions tailored to your goals.
                 </p>
+
+                <a href="#solutions" class="text-link">
+                    Explore Our Services
+                    <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <div class="services-grid" id="solutions">
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <rect x="19" y="5" width="10" height="10"></rect>
+                            <rect x="5" y="33" width="10" height="10"></rect>
+                            <rect x="19" y="33" width="10" height="10"></rect>
+                            <rect x="33" y="33" width="10" height="10"></rect>
+                            <path d="M24 15v9M10 24h28M10 24v9M24 24v9M38 24v9"></path>
+                        </svg>
+                    </div>
+
+                    <h3>Process Automation</h3>
+
+                    <p>
+                        Streamline workflows and eliminate repetitive manual
+                        tasks.
+                    </p>
+
+                    <a href="#contact">
+                        Learn More
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M24 24c-5-9-9-13-14-13-6 0-9 5-9 13s3 13 9 13c5 0 9-4 14-13z"></path>
+                            <path d="M24 24c5-9 9-13 14-13 6 0 9 5 9 13s-3 13-9 13c-5 0-9-4-14-13z"></path>
+                        </svg>
+                    </div>
+
+                    <h3>System Integration</h3>
+
+                    <p>
+                        Connect your tools and data for seamless business
+                        operations.
+                    </p>
+
+                    <a href="#contact">
+                        Learn More
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M5 42h38"></path>
+                            <rect x="9" y="30" width="6" height="12"></rect>
+                            <rect x="21" y="20" width="6" height="22"></rect>
+                            <rect x="33" y="8" width="6" height="34"></rect>
+                        </svg>
+                    </div>
+
+                    <h3>Business Intelligence</h3>
+
+                    <p>
+                        Turn your data into insights with powerful dashboards
+                        and reporting.
+                    </p>
+
+                    <a href="#contact">
+                        Learn More
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M24 4l16 6v12c0 10-6 18-16 22C14 40 8 32 8 22V10z"></path>
+                            <path d="M16 24l6 6 11-13"></path>
+                        </svg>
+                    </div>
+
+                    <h3>Cloud Solutions</h3>
+
+                    <p>
+                        Secure, scalable, and built for the modern cloud.
+                    </p>
+
+                    <a href="#contact">
+                        Learn More
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Supporting sections for navigation -->
+        <section class="content-section" id="about">
+            <div class="section-heading">
+                <p>About Us</p>
+                <h2>Technology Built Around Your Business</h2>
+            </div>
+        </section>
+
+        <section class="content-section" id="why-biy">
+            <div class="section-heading">
+                <p>Why BIY</p>
+                <h2>Practical Solutions Without Unnecessary Complexity</h2>
+            </div>
+        </section>
+
+        <section class="content-section contact-section" id="contact">
+            <div class="section-heading">
+                <p>Contact</p>
+                <h2>Ready to Build Your Digital Foundation?</h2>
 
                 <a
                     class="primary-button"
-                    href="https://forms.cloud.microsoft/r/uP17vPvWPe"
+                    href="https://bookings.cloud.microsoft/book/BIYDigitalSolution@biydigitalsolutions.onmicrosoft.com/s/ORhv6GnR3Eu_W5o"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    Start Your Request
+                    Book Your Free Consultation
                 </a>
 
-                <p class="contact">
+                <p class="contact-email">
                     Questions?
                     <a href="mailto:info@biydigitalsolution.com">
                         info@biydigitalsolution.com
                     </a>
                 </p>
-            </div>
-        </section>
-
-        <section class="services">
-            <div class="section-heading">
-                <p>How We Help</p>
-                <h2>Modern Solutions. Real Results.</h2>
-            </div>
-
-            <div class="services-grid">
-                <article class="service-card">
-                    <div class="icon-circle">
-                        <svg viewBox="0 0 48 48" aria-hidden="true">
-                            <rect x="7" y="7" width="14" height="14"></rect>
-                            <rect x="27" y="7" width="14" height="14"></rect>
-                            <rect x="7" y="27" width="14" height="14"></rect>
-                            <rect x="27" y="27" width="14" height="14"></rect>
-                        </svg>
-                    </div>
-
-                    <h3>Microsoft 365</h3>
-
-                    <p>
-                        Optimize productivity and collaboration with the right
-                        Microsoft 365 tools.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="icon-circle">
-                        <svg viewBox="0 0 48 48" aria-hidden="true">
-                            <circle cx="24" cy="24" r="8"></circle>
-                            <path d="M24 5v6M24 37v6M5 24h6M37 24h6"></path>
-                            <path d="M10.6 10.6l4.3 4.3M33.1 33.1l4.3 4.3"></path>
-                            <path d="M37.4 10.6l-4.3 4.3M14.9 33.1l-4.3 4.3"></path>
-                            <circle cx="24" cy="24" r="16"></circle>
-                        </svg>
-                    </div>
-
-                    <h3>Automation</h3>
-
-                    <p>
-                        Save time and eliminate manual work with intelligent
-                        automation.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="icon-circle">
-                        <svg viewBox="0 0 48 48" aria-hidden="true">
-                            <path d="M8 40h33"></path>
-                            <rect x="10" y="27" width="7" height="13"></rect>
-                            <rect x="21" y="20" width="7" height="20"></rect>
-                            <rect x="32" y="9" width="7" height="31"></rect>
-                        </svg>
-                    </div>
-
-                    <h3>Reporting</h3>
-
-                    <p>
-                        Make data-driven decisions with clear and actionable
-                        insights.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <div class="icon-circle">
-                        <svg viewBox="0 0 48 48" aria-hidden="true">
-                            <path d="M24 10c-2-5-10-4-10 2-5-1-8 5-5 9-4 3-2 10 3 10-1 6 6 9 10 5"></path>
-                            <path d="M24 10c2-5 10-4 10 2 5-1 8 5 5 9 4 3 2 10-3 10 1 6-6 9-10 5"></path>
-                            <path d="M24 10v28M15 17c4 0 5 3 5 6M33 17c-4 0-5 3-5 6"></path>
-                            <path d="M14 29c4 0 6-2 6-5M34 29c-4 0-6-2-6-5"></path>
-                        </svg>
-                    </div>
-
-                    <h3>AI Solutions</h3>
-
-                    <p>
-                        Leverage AI to enhance processes, insights, and customer
-                        experiences.
-                    </p>
-                </article>
             </div>
         </section>
     </main>
