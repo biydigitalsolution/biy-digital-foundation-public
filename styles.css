@@ -37,8 +37,48 @@ a { color: inherit; }
     backdrop-filter: blur(16px);
 }
 
-.header-logo { display: flex; align-items: center; flex-shrink: 0; }
-.header-logo img { display: block; width: 250px; max-height: 72px; object-fit: contain; }
+.header-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header-logo-icon {
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: drop-shadow(0 0 12px rgba(0, 174, 255, 0.35));
+}
+
+.header-brand-text {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.header-brand-text strong {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 850;
+    letter-spacing: -0.04em;
+}
+
+.header-brand-text > span {
+    max-width: 92px;
+    color: #f3f7ff;
+    font-size: 0.79rem;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+}
 
 .desktop-navigation {
     display: flex;
@@ -273,7 +313,27 @@ a { color: inherit; }
 @media (max-width: 640px) {
     :root { --header-height: 74px; }
     .site-header { padding: 0 16px; }
-    .header-logo img { width: 205px; max-height: 60px; }
+    .header-logo {
+        gap: 9px;
+    }
+
+    .header-logo-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+    .header-brand-text {
+        gap: 7px;
+    }
+
+    .header-brand-text strong {
+        font-size: 1.65rem;
+    }
+
+    .header-brand-text > span {
+        max-width: 78px;
+        font-size: 0.68rem;
+    }
     .hero { padding: 40px 18px 30px; }
     .hero h1 { font-size: clamp(2.7rem,14vw,4.2rem); }
     .hero-actions, .primary-button, .secondary-button { width: 100%; }
@@ -282,4 +342,21 @@ a { color: inherit; }
     .cloud-platform-image { width: 470px; max-width: 128%; }
     .services { padding: 46px 18px 56px; }
     .services-grid { grid-template-columns: 1fr; }
+}
+
+
+@media (max-width: 390px) {
+    .header-logo-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .header-brand-text strong {
+        font-size: 1.45rem;
+    }
+
+    .header-brand-text > span {
+        max-width: 68px;
+        font-size: 0.61rem;
+    }
 }
