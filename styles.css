@@ -1,12 +1,26 @@
+:root {
+    --navy: #020b21;
+    --navy-light: #061b47;
+    --blue: #1769ff;
+    --blue-bright: #00aaff;
+    --text: #101a35;
+    --muted: #576784;
+    --border: #dce4f0;
+    --surface: #ffffff;
+}
+
 * {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    min-height: 100vh;
-    background: #f4f7fb;
-    color: #172033;
+    color: var(--text);
+    background: #ffffff;
     font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -14,27 +28,105 @@ body {
         sans-serif;
 }
 
-.page {
-    min-height: 100vh;
+.hero {
+    position: relative;
+    min-height: 640px;
     display: grid;
     place-items: center;
-    padding: 32px 20px;
+    overflow: hidden;
+    padding: 48px 20px;
+    background:
+        radial-gradient(
+            circle at 72% 50%,
+            rgba(17, 92, 255, 0.32),
+            transparent 34%
+        ),
+        linear-gradient(
+            135deg,
+            #010716 0%,
+            var(--navy) 48%,
+            var(--navy-light) 100%
+        );
 }
 
-.card {
-    width: min(100%, 720px);
-    background: #ffffff;
-    border: 1px solid #dfe6ef;
-    border-radius: 20px;
-    padding: 48px;
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.16;
+    background-image:
+        linear-gradient(
+            115deg,
+            transparent 0%,
+            transparent 45%,
+            rgba(38, 124, 255, 0.4) 50%,
+            transparent 55%
+        );
+}
+
+.wave {
+    position: absolute;
+    width: 720px;
+    height: 210px;
+    border-top: 3px solid rgba(0, 174, 255, 0.78);
+    border-radius: 50%;
+    filter:
+        drop-shadow(0 0 8px #0077ff)
+        drop-shadow(0 0 20px rgba(0, 119, 255, 0.7));
+    opacity: 0.9;
+}
+
+.wave::before,
+.wave::after {
+    content: "";
+    position: absolute;
+    inset: 14px 0 0;
+    border-top: 2px solid rgba(32, 126, 255, 0.48);
+    border-radius: 50%;
+}
+
+.wave::after {
+    inset: 30px 0 0;
+    opacity: 0.55;
+}
+
+.wave-left {
+    left: -360px;
+    top: 330px;
+    transform: rotate(8deg);
+}
+
+.wave-right {
+    right: -340px;
+    top: 340px;
+    transform: rotate(-8deg);
+}
+
+.hero-card {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 660px);
+    padding: 32px 54px;
     text-align: center;
-    box-shadow: 0 20px 50px rgba(23, 32, 51, 0.1);
+    background: var(--surface);
+    border-radius: 18px;
+    box-shadow:
+        0 26px 70px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.logo {
+    display: block;
+    width: min(100%, 255px);
+    height: auto;
+    margin: 0 auto 22px;
+    border-radius: 8px;
 }
 
 .brand {
-    margin: 0 0 14px;
-    color: #2563eb;
-    font-size: 0.85rem;
+    margin: 0 0 12px;
+    color: var(--blue);
+    font-size: 0.82rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -42,59 +134,179 @@ body {
 
 h1 {
     margin: 0;
-    font-size: clamp(2.3rem, 7vw, 4rem);
-    line-height: 1.05;
+    color: var(--text);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+}
+
+h1 span {
+    display: block;
 }
 
 .description {
-    max-width: 590px;
+    max-width: 550px;
     margin: 24px auto 0;
-    color: #64748b;
-    font-size: 1.08rem;
-    line-height: 1.7;
+    color: var(--muted);
+    font-size: 1.03rem;
+    line-height: 1.65;
 }
 
-.button {
+.primary-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-height: 52px;
-    margin-top: 32px;
-    padding: 0 26px;
-    background: #2563eb;
+    margin-top: 28px;
+    padding: 0 28px;
     color: #ffffff;
-    border-radius: 12px;
+    background: linear-gradient(135deg, #1769ff, #2e7bff);
+    border-radius: 10px;
+    box-shadow: 0 10px 24px rgba(23, 105, 255, 0.25);
     font-weight: 750;
     text-decoration: none;
+    transition:
+        transform 160ms ease,
+        box-shadow 160ms ease;
 }
 
-.button:hover {
-    background: #1d4ed8;
+.primary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(23, 105, 255, 0.34);
 }
 
 .contact {
-    margin: 28px 0 0;
-    color: #64748b;
+    margin: 22px 0 0;
+    color: var(--muted);
     font-size: 0.95rem;
 }
 
 .contact a {
-    color: #2563eb;
+    color: var(--blue);
     font-weight: 700;
 }
-.logo {
-    display: block;
-    width: min(100%, 320px);
-    height: auto;
-    margin: 0 auto 24px;
-    border-radius: 12px;
+
+.services {
+    padding: 64px 28px 80px;
+    background: #ffffff;
 }
-@media (max-width: 600px) {
-    .card {
-        padding: 34px 22px;
+
+.section-heading {
+    text-align: center;
+}
+
+.section-heading > p {
+    margin: 0 0 10px;
+    color: var(--blue);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.035em;
+}
+
+.services-grid {
+    width: min(100%, 1160px);
+    margin: 42px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.service-card {
+    min-height: 245px;
+    padding: 8px 34px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+}
+
+.service-card:last-child {
+    border-right: 0;
+}
+
+.icon-circle {
+    width: 76px;
+    height: 76px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 18px;
+    background: #edf4ff;
+    border-radius: 50%;
+}
+
+.icon-circle svg {
+    width: 42px;
+    height: 42px;
+    fill: none;
+    stroke: var(--blue);
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.service-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.25rem;
+}
+
+.service-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px 0;
     }
 
-    .button {
+    .service-card:nth-child(2) {
+        border-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: auto;
+        padding: 34px 16px;
+    }
+
+    .hero-card {
+        padding: 30px 22px;
+    }
+
+    .logo {
+        width: 210px;
+    }
+
+    h1 {
+        font-size: 2.55rem;
+    }
+
+    .services {
+        padding: 54px 20px 64px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+        padding: 20px 18px 34px;
+    }
+
+    .service-card:last-child {
+        border-bottom: 0;
+    }
+
+    .primary-button {
         width: 100%;
     }
 }
