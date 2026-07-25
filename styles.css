@@ -82,7 +82,13 @@ h1 {
     color: #2563eb;
     font-weight: 700;
 }
-
+.logo {
+    display: block;
+    width: min(100%, 320px);
+    height: auto;
+    margin: 0 auto 24px;
+    border-radius: 12px;
+}
 @media (max-width: 600px) {
     .card {
         padding: 34px 22px;
