@@ -74,11 +74,45 @@ footer p,footer a{font-size:.93rem;color:#bfd5d3}
 .note{font-size:.86rem;color:var(--muted);margin-top:12px}
 @media(max-width:980px){.news-hero-grid{grid-template-columns:1fr}.article-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:680px){.news-hero{padding:50px 0}.news-hero h1{font-size:3rem}.news-hero-photo{min-height:360px;border-radius:28px 28px 68px 28px}.form-row,.article-grid{grid-template-columns:1fr}.signup-card{padding:28px}.archive-item{align-items:flex-start;flex-direction:column}}
+
+/* Keep all desktop navigation labels on one line */
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:18px;
+  font-size:.9rem;
+  font-weight:700;
+  color:#38565b;
+  flex-wrap:nowrap;
+  white-space:nowrap;
+}
+
+.nav-links a {
+  white-space:nowrap;
+  flex:0 0 auto;
+}
+
+.nav-links .btn {
+  white-space:nowrap;
+}
+
+@media (max-width:1180px) {
+  .nav-links {
+    gap:14px;
+    font-size:.84rem;
+  }
+
+  .nav-links .btn {
+    padding-left:16px;
+    padding-right:16px;
+  }
+}
+
 </style>
 </head>
 <body>
 <div class="announcement"><div class="container"><span>Pediatric Speech Therapy in Houston, Texas</span><span>Now Accepting New Patients • Insurance Accepted</span><span>832-706-4717</span></div></div>
-<header class="site-header"><div class="container nav"><a href="index.html" class="brand"><div class="brand-mark">💬</div><span>Children's Language Center</span></a><nav class="nav-links"><a href="index.html">Home</a><a href="our-practice.html">Our Practice</a><a href="blog.html">Blog</a><a href="services.html">Services</a><a href="dir-floortime.html">DIR Floortime</a><a href="new-patients.html">New Patients</a><a href="contact.html">Contact</a><a class="btn btn-primary" href="contact.html">Request Appointment</a></nav></div></header>
+<header class="site-header"><div class="container nav"><a href="index.html" class="brand" aria-label="Children's Language Center home"><img src="clc-logo.png" alt="Children's Language Center logo" class="brand-logo"></a><nav class="nav-links"><a href="index.html">Home</a><a href="our-practice.html">Our Practice</a><a href="blog.html">Blog</a><a href="services.html">Services</a><a href="dir-floortime.html">DIR Floortime</a><a href="new-patients.html">New Patients</a><a href="newsletter.html">Newsletter</a><a href="contact.html">Contact</a><a class="btn btn-primary" href="contact.html">Request Appointment</a></nav></div></header>
 
 <main>
 <section class="news-hero"><div class="container news-hero-grid"><div><div class="kicker">Parent Resources</div><h1>Little tips. Big <span>connections.</span></h1><p class="intro">Practical speech, language, play, and literacy ideas for everyday family life - plus clinic news and helpful resources from Children's Language Center.</p><br><a class="btn btn-primary" href="#subscribe">Join the Newsletter</a></div><div class="news-hero-photo"></div></div></section>
@@ -97,7 +131,7 @@ footer p,footer a{font-size:.93rem;color:#bfd5d3}
 </div></div></section>
 
 <section class="archive"><div class="container"><div class="kicker">Newsletter Archive</div><h2 class="title">Past issues and family resources.</h2><div class="archive-list">
-<div class="archive-item"><div><strong>August 2026 - Back-to-School Communication Tips</strong><br><span style="color:#65777c">Routines, classroom communication, and easing transitions.</span></div><a class="btn btn-secondary" href="#">Read Issue</a></div>
+<div class="archive-item"><div><strong>August 2026 - Back-to-School Communication Tips</strong><br><span style="color:#65777c">Routines, classroom communication, and easing transitions.</span></div><a class="btn btn-secondary" href="newsletter-august-2026.html">Read Issue</a></div>
 <div class="archive-item"><div><strong>July 2026 - Learning Through Summer Play</strong><br><span style="color:#65777c">Simple language-building activities for home and outings.</span></div><a class="btn btn-secondary" href="#">Read Issue</a></div>
 <div class="archive-item"><div><strong>June 2026 - Building Words Through Books</strong><br><span style="color:#65777c">How to make reading more interactive for young children.</span></div><a class="btn btn-secondary" href="#">Read Issue</a></div>
 </div></div></section>

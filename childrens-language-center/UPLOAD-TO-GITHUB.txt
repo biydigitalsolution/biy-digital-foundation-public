@@ -1,0 +1,5 @@
+GitHub Pages upload:
+1. Upload every file in this folder to the root of your repository.
+2. Keep all PNG image files in the same root folder as the HTML files.
+3. Make sure index.html stays in the repository root.
+4. In GitHub: Settings > Pages > Deploy from a branch > main > /(root) > Save.

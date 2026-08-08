@@ -69,10 +69,44 @@ footer p,footer a{font-size:.93rem;color:#bfd5d3}
 .owner-photo:after{content:"Owner photo";position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.92);padding:8px 12px;border-radius:999px;font-weight:800;color:var(--teal)}
 @media(max-width:900px){.page-hero-grid,.content-grid{grid-template-columns:1fr}.cards3{grid-template-columns:1fr 1fr}}
 @media(max-width:680px){.cards3{grid-template-columns:1fr}.page-photo,.owner-photo{min-height:360px}}
+
+/* Keep all desktop navigation labels on one line */
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:18px;
+  font-size:.9rem;
+  font-weight:700;
+  color:#38565b;
+  flex-wrap:nowrap;
+  white-space:nowrap;
+}
+
+.nav-links a {
+  white-space:nowrap;
+  flex:0 0 auto;
+}
+
+.nav-links .btn {
+  white-space:nowrap;
+}
+
+@media (max-width:1180px) {
+  .nav-links {
+    gap:14px;
+    font-size:.84rem;
+  }
+
+  .nav-links .btn {
+    padding-left:16px;
+    padding-right:16px;
+  }
+}
+
 </style>
 </head><body>
 <div class="announcement"><div class="container"><span>Pediatric Speech Therapy in Houston, Texas</span><span>Now Accepting New Patients • Insurance Accepted</span><span>832-706-4717</span></div></div>
-<header class="site-header"><div class="container nav"><a href="index.html" class="brand"><div class="brand-mark">💬</div><span>Children's Language Center</span></a><nav class="nav-links"><a href="index.html">Home</a><a href="our-practice.html">Our Practice</a><a href="blog.html">Blog</a><a href="services.html">Services</a><a href="dir-floortime.html">DIR Floortime</a><a href="new-patients.html">New Patients</a><a href="contact.html">Contact</a><a class="btn btn-primary" href="contact.html">Request Appointment</a></nav></div></header>
+<header class="site-header"><div class="container nav"><a href="index.html" class="brand" aria-label="Children's Language Center home"><img src="clc-logo.png" alt="Children's Language Center logo" class="brand-logo"></a><nav class="nav-links"><a href="index.html">Home</a><a href="our-practice.html">Our Practice</a><a href="blog.html">Blog</a><a href="services.html">Services</a><a href="dir-floortime.html">DIR Floortime</a><a href="new-patients.html">New Patients</a><a href="newsletter.html">Newsletter</a><a href="contact.html">Contact</a><a class="btn btn-primary" href="contact.html">Request Appointment</a></nav></div></header>
 
 <main>
 <section class="page-hero"><div class="container page-hero-grid">
