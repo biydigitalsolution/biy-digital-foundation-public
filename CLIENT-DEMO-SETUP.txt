@@ -1,0 +1,23 @@
+BIY CLIENT DEMO CENTER
+
+Domain:
+https://demo.biydigitalsolution.com/
+
+Current client demo:
+https://demo.biydigitalsolution.com/childrens-language-center/
+
+HOW TO ADD A NEW CLIENT:
+1. Create a new folder in the repository root.
+   Example: /new-client/
+2. Put that client's complete website demo inside the folder.
+3. The folder MUST contain its own index.html.
+4. Keep that client's images/CSS/JS inside that same folder or its subfolders.
+5. Push the changes to GitHub.
+6. Send the client:
+   https://demo.biydigitalsolution.com/new-client/
+
+IMPORTANT:
+- Do not replace or move the root CNAME file.
+- Do not create a CNAME inside client folders.
+- Folder links are not password protected. Anyone with the URL can open them.
+- The root Demo Center intentionally does not list customer names.
