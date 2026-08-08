@@ -95,6 +95,40 @@ footer p,footer a{font-size:.93rem;color:#bfd5d3}
 .newsletter-photo{min-height:320px;border-radius:25px;background:url("stock-kids-globe.png") center/cover}
 @media(max-width:980px){.hero-grid,.approach-grid,.highlight-card,.newsletter-card{grid-template-columns:1fr}.service-grid{grid-template-columns:repeat(2,1fr)}.trust-items{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.hero{padding:48px 0 56px}.hero h1{font-size:3.05rem}.hero-actions{display:grid}.hero-actions .btn{width:100%}.photo-frame{min-height:390px;border-radius:28px 28px 68px 28px}.floating-card.two{display:none}.floating-card.one{left:12px;right:12px;bottom:15px;max-width:none}.service-grid,.step-grid,.highlight-points{grid-template-columns:1fr}.collage{min-height:390px}}
+
+/* Keep all desktop navigation labels on one line */
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:18px;
+  font-size:.9rem;
+  font-weight:700;
+  color:#38565b;
+  flex-wrap:nowrap;
+  white-space:nowrap;
+}
+
+.nav-links a {
+  white-space:nowrap;
+  flex:0 0 auto;
+}
+
+.nav-links .btn {
+  white-space:nowrap;
+}
+
+@media (max-width:1180px) {
+  .nav-links {
+    gap:14px;
+    font-size:.84rem;
+  }
+
+  .nav-links .btn {
+    padding-left:16px;
+    padding-right:16px;
+  }
+}
+
 </style>
 </head>
 <body>
